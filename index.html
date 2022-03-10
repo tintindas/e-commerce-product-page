@@ -17,12 +17,18 @@
 	</head>
 	<body>
 		<!-- HEADER START -->
-		<header class="">
-			<button>
-				<img src="./images/icon-menu.svg" alt="Open menu" />
-			</button>
-			<img src="./images/logo.svg" alt="Stylised logo of the word Sneaker" />
-			<nav>
+		<header class="flex h-16 items-center p-4">
+			<div class="flex h-10 items-center">
+				<button class="mr-3">
+					<img src="./images/icon-menu.svg" alt="Open menu" />
+				</button>
+				<img
+					class="w-36"
+					src="./images/logo.svg"
+					alt="Stylised logo of the word Sneaker"
+				/>
+			</div>
+			<nav class="absolute top-0 left-0 -translate-x-full">
 				<ul>
 					<li class="">Collections</li>
 					<li>Men</li>
@@ -31,10 +37,16 @@
 					<li>Contact</li>
 				</ul>
 			</nav>
-			<button>
-				<img src="./images/icon-cart.svg" alt="Open cart" />
-			</button>
-			<img src="./images/image-avatar.png" alt="Picture of current user" />
+			<div class="flex ml-auto h-10 items-center">
+				<button>
+					<img class="mr-5" src="./images/icon-cart.svg" alt="Open cart" />
+				</button>
+				<img
+					class="h-7"
+					src="./images/image-avatar.png"
+					alt="Picture of current user"
+				/>
+			</div>
 		</header>
 		<!-- HEADER END -->
 
