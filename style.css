@@ -33,4 +33,49 @@ body {
     --bold-font-weight: 700
 }
 
+/* UTILITIES */
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hidden {
+    display: none;
+}
+
 /* HEADER */
+
+header {
+    display: flex;
+    height: 8vh;
+    padding-inline: 1rem;
+}
+
+.logo {
+    width: 40vw;
+    height: 2rem;
+    object-fit: contain;
+    margin-top: -2px;
+    margin-left: 1rem;
+}
+
+.mt {
+    margin-top: 5px;
+}
+
+.right {
+    margin-left: auto;
+}
+
+.avatar {
+    height: 2rem;
+    margin-inline: 1rem;
+}
+
+/* NAVBAR */
+
+nav {
+    display: none;
+}
