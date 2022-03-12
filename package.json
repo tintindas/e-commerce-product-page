@@ -1,8 +1,6 @@
 {
 	"scripts": {
-		"serve": "gulp",
-		"build-css": "",
-		"dev": "npm run build-css & npm run serve"
+		"serve": "gulp"
 	},
 	"devDependencies": {
 		"browser-sync": "^2.27.7",

@@ -1,7 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
 
+/* Style reset */
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+	background: none;
+}
+
 html,
 body {
 	width: 100vw;
 	overflow-x: hidden;
+    font-family: 'Kumbh Sans'
 }
+
+/* VARIABLES */
+
+:root {
+	--orange: 26, 100%, 55%;
+	--pale-orange: 25, 100%, 94%;
+    --very-dark-blue: 220, 13%, 13%
+    --dark-grayish-blue: 219, 9%, 45%;
+    --grayish-blue: 220, 14%, 75%;
+    --light-grayish-blue: 223, 64%, 98%
+    --white: 0, 0%, 100%;
+    --black: 0, 0%, 0%
+    --base-font-weight: 400
+    --bold-font-weight: 700
+}
+
+/* HEADER */
