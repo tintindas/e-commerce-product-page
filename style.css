@@ -25,14 +25,14 @@ body {
 /* VARIABLES */
 
 :root {
-	--orange: 26, 100%, 55%;
-	--pale-orange: 25, 100%, 94%;
-	--very-dark-blue: 220, 13%, 13%;
-	--dark-grayish-blue: 219, 9%, 45%;
-	--grayish-blue: 220, 14%, 75%;
-	--light-grayish-blue: 223, 64%, 98%;
-	--white: 0, 0%, 100%;
-	--black: 0, 0%, 0%;
+	--orange: 26 100% 55%;
+	--pale-orange: 25 100% 94%;
+	--very-dark-blue: 220 13% 13%;
+	--dark-grayish-blue: 219 9% 45%;
+	--grayish-blue: 220 14% 75%;
+	--light-grayish-blue: 223 64% 98%;
+	--white: 0 0% 100%;
+	--black: 0 0% 0%;
 	--base-font-weight: 400;
 	--bold-font-weight: 700;
 }
@@ -110,3 +110,58 @@ nav ul li {
 }
 
 /* MAIN */
+
+.carousel-container {
+	position: relative;
+}
+
+.image-carousel {
+	display: flex;
+	position: relative;
+	height: 50vh;
+	overflow-y: hidden;
+}
+
+.image-carousel::-webkit-scrollbar {
+	display: none;
+}
+
+.image-container img {
+	width: 100vw;
+}
+
+.arrow-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	height: 2.5rem;
+	width: 2.5rem;
+	background-color: hsl(var(--white) / 0.8);
+	border-radius: 50%;
+	z-index: 10;
+}
+
+.arrow-container img {
+	height: 0.8rem;
+	width: 0.7rem;
+	opacity: 0.95;
+}
+
+.arrow-container.arrow-left {
+	left: 1rem;
+}
+
+.arrow-container.arrow-left img {
+	margin-left: -8%;
+}
+
+.arrow-container.arrow-right {
+	right: 1rem;
+}
+
+.arrow-container.arrow-right img {
+	margin-right: -8%;
+}
