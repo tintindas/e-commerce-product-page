@@ -18,6 +18,10 @@ body {
 	font-family: 'Kumbh Sans';
 }
 
+:root::-webkit-scrollbar {
+	display: none;
+}
+
 /* VARIABLES */
 
 :root {
@@ -49,7 +53,7 @@ body {
 
 header {
 	display: flex;
-	height: 8vh;
+	height: 10vh;
 	padding-inline: 1rem;
 }
 
@@ -71,7 +75,7 @@ header {
 
 .avatar {
 	height: 2rem;
-	margin-inline: 1rem;
+	margin-left: 1rem;
 }
 
 /* NAVBAR */
