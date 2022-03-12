@@ -16,7 +16,7 @@ const browsersyncReload = (cb) => {
 }
 
 const watchTask = () => {
-	watch(['index.html', 'style.css'], browsersyncReload)
+	watch(['./src/index.html', './src/style.css'], browsersyncReload)
 }
 
 exports.default = series(browsersyncServe, watchTask)

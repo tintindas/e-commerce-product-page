@@ -54,7 +54,7 @@ body {
 header {
 	display: flex;
 	height: 10vh;
-	padding-inline: 1rem;
+	padding-inline: 1.5rem;
 }
 
 .logo {
@@ -164,4 +164,112 @@ nav ul li {
 
 .arrow-container.arrow-right img {
 	margin-right: -8%;
+}
+
+/* CONTENT */
+
+.content {
+	margin-block: 0.5rem;
+	padding: 1.5rem;
+}
+
+/* DESCRIPTION */
+
+.description h3 {
+	text-transform: uppercase;
+	font-size: 0.8rem;
+	letter-spacing: 2px;
+	color: hsl(var(--orange));
+}
+
+.description h1 {
+	color: hsl(var(--very-dark-blue));
+	margin-block: 1rem;
+}
+
+.description p {
+	font-size: 1rem;
+	line-height: 1.5rem;
+	color: hsl(var(--dark-grayish-blue));
+}
+
+/* PRICING */
+
+.pricing-container {
+	margin-block: 1rem;
+}
+
+.pricing {
+	display: flex;
+	align-items: center;
+}
+
+.pricing h1 {
+	color: hsl(var(--very-dark-blue));
+}
+
+.pricing .discount {
+	margin-inline: 1rem;
+	padding: 0.3rem 0.5rem;
+	background-color: hsl(var(--pale-orange));
+	color: hsl(var(--orange));
+	font-weight: var(--bold-font-weight);
+	border-radius: 0.5rem;
+	font-size: 1.1rem;
+}
+
+.pricing .strikeout {
+	margin-left: auto;
+	font-size: 1.1rem;
+	text-decoration: line-through;
+	color: hsl(var(--dark-grayish-blue));
+	font-weight: var(--bold-font-weight);
+}
+
+/* QUANTITY */
+
+.quantity-container {
+	margin-block: 1rem;
+	padding: 1rem 1.5rem;
+	display: flex;
+	background-color: hsl(var(--light-grayish-blue));
+	justify-content: space-between;
+	border-radius: 0.5rem;
+}
+
+.quantity-container .icon {
+	width: 0.8rem;
+}
+
+.quantity-container p {
+	font-size: 1.1rem;
+	font-weight: var(--bold-font-weight);
+}
+
+.add-btn {
+	width: 100%;
+	font-size: 1.1rem;
+	padding: 1rem 1.5rem;
+	background-color: hsl(var(--orange));
+	border-radius: 0.5rem;
+	color: hsl(var(--white));
+	font-weight: var(--bold-font-weight);
+	box-shadow: 0 10px 30px hsl(var(--orange) / 0.8);
+}
+
+.add-btn img {
+	margin-inline: 0.8rem;
+	height: 1rem;
+}
+
+/* FOOTER */
+
+footer {
+	font-size: 0.7rem;
+	text-align: center;
+	margin-block: 0.5rem;
+}
+
+footer a {
+	color: hsl(var(--orange));
 }
