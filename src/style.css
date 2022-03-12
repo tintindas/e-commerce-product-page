@@ -128,6 +128,7 @@ nav ul li {
 
 .image-container img {
 	width: 100vw;
+	transform: translateX(-100%);
 }
 
 .arrow-container {
