@@ -4,7 +4,7 @@ const browsersync = require('browser-sync').create()
 const browsersyncServe = (cb) => {
 	browsersync.init({
 		server: {
-			baseDir: '.'
+			baseDir: './src'
 		}
 	})
 	cb()
