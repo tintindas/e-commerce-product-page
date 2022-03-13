@@ -1,9 +1,14 @@
+const body = document.body
 const bg = document.getElementById('bg')
 const nav = document.getElementById('navbar')
 const menuBtn = document.getElementById('menu-btn')
 const closeBtn = document.getElementById('close-btn')
 const cartBtn = document.getElementById('cart-btn')
 const cart = document.getElementById('cart')
+const emptyCart = document.getElementById('basket-empty')
+const notEmptyCart = document.getElementById('basket-not-empty')
+const itemQuantity = document.getElementById('item-quant')
+const totalPrice = document.getElementById('total-price')
 const arrowLeft = document.getElementById('arrow-left')
 const arrowRight = document.getElementById('arrow-right')
 const slider = document.getElementById('slider')
@@ -91,9 +96,14 @@ plus.addEventListener('click', () => {
 
 // Cart Contents
 addBtn.addEventListener('click', () => {
-	console.log('add btn clicked')
 	if (quant > 0) {
 		cartBtn.setAttribute('data-quant', quant)
 		cartBtn.style.setProperty('--display-quant', 'block')
+
+		emptyCart.classList.add('hidden')
+		notEmptyCart.classList.remove('hidden')
+
+		itemQuantity.innerHTML = quant
+		totalPrice.innerHTML = `$${(quant * 125.0).toFixed(2)}`
 	}
 })
