@@ -39,6 +39,10 @@ body {
 
 /* UTILITIES */
 
+button {
+	cursor: pointer;
+}
+
 .flex {
 	display: flex;
 	align-items: center;
@@ -47,6 +51,22 @@ body {
 
 .hidden {
 	display: none;
+}
+
+.bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 30;
+	pointer-events: none;
+	transition: background-color 300ms ease-in-out;
+}
+
+.faded {
+	background-color: hsl(var(--black) / 0.75);
+	pointer-events: all;
 }
 
 /* HEADER */
@@ -87,8 +107,13 @@ nav {
 	width: 75vw;
 	height: 100vh;
 	background-color: hsl(var(--white));
-	z-index: 10;
+	z-index: 30;
 	transform: translateX(-100%);
+	transition: transform 300ms ease-in-out;
+}
+
+nav.open {
+	transform: translateX(0);
 }
 
 nav ul {
@@ -104,8 +129,8 @@ nav ul li {
 	margin-block: 1.2rem;
 }
 
-.close-icon {
-	margin-top: 1.2rem;
+#close-btn {
+	margin-top: 1.5rem;
 	margin-left: 1.5rem;
 }
 

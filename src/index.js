@@ -1,3 +1,7 @@
+const bg = document.getElementById('bg')
+const nav = document.getElementById('navbar')
+const menuBtn = document.getElementById('menu-btn')
+const closeBtn = document.getElementById('close-btn')
 const arrowLeft = document.getElementById('arrow-left')
 const arrowRight = document.getElementById('arrow-right')
 const slider = document.getElementById('slider')
@@ -5,6 +9,18 @@ const images = document.getElementsByClassName('image-container')
 const minus = document.getElementById('minus')
 const plus = document.getElementById('plus')
 const quantity = document.getElementById('quantity')
+
+// Navbar
+
+menuBtn.addEventListener('click', () => {
+	bg.classList.add('faded')
+	nav.classList.add('open')
+})
+
+closeBtn.addEventListener('click', () => {
+	bg.classList.remove('faded')
+	nav.classList.remove('open')
+})
 
 // Slider
 let currentIndex = 1
