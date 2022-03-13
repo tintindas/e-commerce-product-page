@@ -120,6 +120,9 @@ nav ul li {
 	position: relative;
 	height: 50vh;
 	overflow-y: hidden;
+	width: max-content;
+	transform: translateX(-100vw);
+	transition: transform 300ms ease-in-out;
 }
 
 .image-carousel::-webkit-scrollbar {
@@ -128,7 +131,6 @@ nav ul li {
 
 .image-container img {
 	width: 100vw;
-	transform: translateX(-100%);
 }
 
 .arrow-container {
