@@ -46,7 +46,7 @@
 				</nav>
 			</div>
 			<div class="right flex">
-				<button>
+				<button id="cart-btn">
 					<img class="mt" src="./images/icon-cart.svg" alt="Open cart" />
 				</button>
 				<img
@@ -58,6 +58,15 @@
 		</header>
 
 		<main>
+			<div id="cart" class="basket">
+				<div class="basket-header">Cart</div>
+				<div class="basket-content flex">
+					<div class="basket-empty">
+						<p>Your cart is empty</p>
+					</div>
+					<div class="basket-not-empty hidden">Your cart is not empty</div>
+				</div>
+			</div>
 			<div class="carousel-container">
 				<div id="arrow-left" class="arrow-container arrow-left">
 					<img

@@ -61,7 +61,7 @@ button {
 	height: 100vh;
 	z-index: 30;
 	pointer-events: none;
-	transition: background-color 300ms ease-in-out;
+	transition: background-color 200ms ease-in-out;
 }
 
 .faded {
@@ -300,4 +300,34 @@ footer {
 
 footer a {
 	color: hsl(var(--orange));
+}
+
+/* BASKET */
+
+.basket {
+	position: absolute;
+	width: 90vw;
+	height: 40vh;
+	background-color: white;
+	top: 10vh;
+	margin: 3vh 5vw;
+	z-index: 40;
+	border-radius: 1rem;
+	display: none;
+	flex-direction: column;
+}
+
+.basket-header {
+	padding: 1rem;
+	font-weight: var(--bold-font-weight);
+	border-bottom: 1px solid hsl(var(--dark-grayish-blue));
+}
+
+.basket-content {
+	flex-grow: 1;
+}
+
+.basket-empty {
+	font-weight: var(--bold-font-weight);
+	color: hsl(var(--dark-grayish-blue));
 }

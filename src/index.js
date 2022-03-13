@@ -2,6 +2,8 @@ const bg = document.getElementById('bg')
 const nav = document.getElementById('navbar')
 const menuBtn = document.getElementById('menu-btn')
 const closeBtn = document.getElementById('close-btn')
+const cartBtn = document.getElementById('cart-btn')
+const cart = document.getElementById('cart')
 const arrowLeft = document.getElementById('arrow-left')
 const arrowRight = document.getElementById('arrow-right')
 const slider = document.getElementById('slider')
@@ -20,6 +22,18 @@ menuBtn.addEventListener('click', () => {
 closeBtn.addEventListener('click', () => {
 	bg.classList.remove('faded')
 	nav.classList.remove('open')
+})
+
+// Cart
+let isCartOpen = false
+
+cartBtn.addEventListener('click', () => {
+	if (isCartOpen) {
+		cart.style.display = 'none'
+	} else {
+		cart.style.display = 'flex'
+	}
+	isCartOpen = !isCartOpen
 })
 
 // Slider
