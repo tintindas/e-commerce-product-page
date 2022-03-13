@@ -303,6 +303,24 @@ footer a {
 }
 
 /* BASKET */
+#cart-btn {
+	--display-quant: none;
+	position: relative;
+}
+
+#cart-btn::before {
+	top: 2px;
+	right: 0;
+	position: absolute;
+	content: attr(data-quant);
+	color: hsl(var(--white));
+	background-color: hsl(var(--orange));
+	margin-right: -5px;
+	font-size: 0.7rem;
+	padding-inline: 0.4rem;
+	border-radius: 0.3rem;
+	display: var(--display-quant);
+}
 
 .basket {
 	position: absolute;

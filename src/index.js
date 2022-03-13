@@ -11,6 +11,7 @@ const images = document.getElementsByClassName('image-container')
 const minus = document.getElementById('minus')
 const plus = document.getElementById('plus')
 const quantity = document.getElementById('quantity')
+const addBtn = document.getElementById('add-btn')
 
 // Navbar
 
@@ -24,7 +25,7 @@ closeBtn.addEventListener('click', () => {
 	nav.classList.remove('open')
 })
 
-// Cart
+// Cart Toggle
 let isCartOpen = false
 
 cartBtn.addEventListener('click', () => {
@@ -86,4 +87,13 @@ minus.addEventListener('click', () => {
 plus.addEventListener('click', () => {
 	quant += 1
 	quantity.innerHTML = quant
+})
+
+// Cart Contents
+addBtn.addEventListener('click', () => {
+	console.log('add btn clicked')
+	if (quant > 0) {
+		cartBtn.setAttribute('data-quant', quant)
+		cartBtn.style.setProperty('--display-quant', 'block')
+	}
 })
