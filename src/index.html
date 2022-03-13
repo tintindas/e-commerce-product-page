@@ -61,10 +61,27 @@
 			<div id="cart" class="basket">
 				<div class="basket-header">Cart</div>
 				<div class="basket-content flex">
-					<div class="basket-empty">
+					<div class="basket-empty hidden">
 						<p>Your cart is empty</p>
 					</div>
-					<div class="basket-not-empty hidden">Your cart is not empty</div>
+					<div class="basket-not-empty">
+						<div class="basket-item flex">
+							<img
+								class="item-thumbnail"
+								src="./images/image-product-1-thumbnail.jpg"
+								alt="shoe thumbnail"
+							/>
+							<div class="item-description">
+								<p class="item-title">Autumn Limited Edition...</p>
+								<p class="item-price">
+									$125.00 x <span id="item-quant">0</span>
+									<span id="total-price">0</span>
+								</p>
+							</div>
+							<img src="./images/icon-delete.svg" alt="remove from cart" />
+						</div>
+						<button class="checkout-btn">Checkout</button>
+					</div>
 				</div>
 			</div>
 			<div class="carousel-container">
